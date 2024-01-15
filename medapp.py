@@ -69,7 +69,9 @@ if uploaded_file is not None:
 
 submit=st.button("Description of Medicine")
 
-input_prompt= """Provide details of the medicine detected in the image using the following format:
+input_prompt= """
+
+Provide details of the medicine detected in the image using the following format:
 
 ### Medicine Details:
 - **Name:** [Provide the name of the medicine]
@@ -78,7 +80,23 @@ input_prompt= """Provide details of the medicine detected in the image using the
 - **Usage:** [Describe how the medicine is typically used]
 - **Dosage:** [Specify the recommended dosage]
 - **Description:**
-                - [Include any additional information or description about the medicine]
+  - [Include any additional information or description about the medicine]
+
+### Safety and Side Effects:
+- **Possible Side Effects:** [List potential side effects of the medicine]
+- **Contraindications:** [Specify any conditions or situations where the medicine should not be used]
+- **Warnings:** [Provide important warnings or precautions related to the medicine]
+
+### Storage and Administration:
+- **Storage Instructions:** [Specify how the medicine should be stored]
+- **Administration Guidelines:** [Provide instructions on how to administer the medicine]
+
+### Additional Information:
+- **Manufacturer:** [Specify the manufacturer of the medicine]
+- **Availability:** [Indicate if the medicine is prescription-only or available over-the-counter]
+- **Cost:** [Provide information about the cost or pricing both in Dollars and INR]
+
+
 
 """
                 
